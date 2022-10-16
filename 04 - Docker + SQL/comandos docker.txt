@@ -1,0 +1,8 @@
+docker build -t web_apache . #build da imagem web_apache
+docker image ls #lista de imagens disponiveis
+docker run -d -p 80:80 web_apache #roda a imagem web_apache na porta 80
+docker ps #list de containers
+docker stop ecdb3f4ef457 #para o container de ID ecdb3f4ef457
+docker-compose up db #roda o servico compose db
+docker-compose down #para o servico + rede
+docker-compose ps #lista de containers compose
